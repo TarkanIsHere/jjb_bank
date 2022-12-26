@@ -4,7 +4,7 @@ def join(process):
     try:
         email_txt = open("email.txt", "r")
         current_email = email_txt.readline()
-        while current_email == "":
+        while current_email != "":
             email_list.append(current_email[:len(current_email)-1])
             current_email = email_txt.readline()
         email_txt.close()
@@ -71,7 +71,7 @@ def join(process):
     
     # we append the password to the password.txt
     password_txt = open("password.txt", "a")
-    password_txt.write(password)
+    password_txt.write(f"{password}\n")
     password_txt.close()
 
     print("WELCOME!")
