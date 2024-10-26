@@ -1,3 +1,3 @@
 # jjb_bank
-we trying to write a simple bank system in python
-zattiri zort
+We trying to write a very basic bank system in Python.
+
